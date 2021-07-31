@@ -15,15 +15,8 @@ export class Response {
 }
 
 export class OperationCompleted extends Response {
-	constructor(public message: string = "Operation Completed", public data?: any, status_code?: number) {
-		super(200, message, data, status_code);
+	constructor(public message: string = "Operation Completed", public records?: any, status_code?: number) {
+		super(200, message, records, status_code);
 		this.status_code = this.status_code ? this.status_code : StatusCode.operationCompleted;
-	}
-}
-
-export class InsertCompleted extends Response {
-	constructor(public message: string = "Insert Completed", public data?: any, status_code?: number) {
-		super(201, message, data, status_code ? status_code : StatusCode.insertCompleted);
-		this.status_code = this.status_code ? this.status_code : StatusCode.insertCompleted;
 	}
 }
