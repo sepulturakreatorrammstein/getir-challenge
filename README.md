@@ -14,7 +14,7 @@ To run server on the local machine;
   minCount: "650",
   maxCount: "700"
 }` to test the application.
-6) Postman documentation link: https://www.getpostman.com/collections/d7346a2308938a09ee6d
+6) Postman documentation link: https://documenter.getpostman.com/view/1665800/Tzsfkjtg
 7) In order to run unit and integration tests use `yarn test` command
 
 App deployed to Heroku use the following link to reach application; https://my-getir-challenge.herokuapp.com/
