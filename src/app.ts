@@ -50,14 +50,9 @@ class App {
     }
 
     private appConfig() {
-        // var corsOptions = {
-        //   origin: ["http://localhost:3000", "http://localhost:3001", "https://acrm.sandbox.acuzdan.com", "/\acrm\.acuzdan\.com$'", "/\acrm\.sandbox\.acuzdan\.com$'"],
-        //   optionsSuccessStatus: 200 // For legacy browser support
-        // };
-        // this.app.use(cors(corsOptions));
         this.app.use(cors());
         this.app.use(express.json({ limit: "5mb" }));
-        this.app.use(express.urlencoded({ extended: false, limit: "5mb" })); //Parse URL-encoded bodies
+        this.app.use(express.urlencoded({ extended: false, limit: "5mb" }));
     }
 
     listen(): Promise<boolean> {
