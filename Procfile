@@ -1,1 +1,1 @@
-web: node ./dist/boot.js
+web: node dist/boot.js
