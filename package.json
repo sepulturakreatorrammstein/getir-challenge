@@ -7,8 +7,7 @@
     "build": "tsc --project ./tsconfig.json",
     "start": "node dist/boot.js",
     "start:dev": "tsc --project ./tsconfig.json && nodemon src/boot.ts",
-    "test": "jest --watch  --runInBand --detectOpenHandles",
-    "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src"
+    "test": "jest --watch  --runInBand --detectOpenHandles"
   },
   "engines": {
     "yarn": "1.22.10",
