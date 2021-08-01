@@ -4,7 +4,9 @@
   "description": "",
   "main": "boot.ts",
   "scripts": {
-    "start": "tsc --project ./tsconfig.json && nodemon src/boot.ts",
+    "heroku-prebuild": "yarn build",
+    "start": "node dist/boot.js",
+    "start:dev": "tsc --project ./tsconfig.json && nodemon src/boot.ts",
     "test": "jest --watch  --runInBand --detectOpenHandles"
   },
   "engines": {
