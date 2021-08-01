@@ -7,7 +7,10 @@
     "start": "tsc --project ./tsconfig.json && nodemon src/boot.ts",
     "test": "jest --watch  --runInBand --detectOpenHandles"
   },
-  "author": "CŞ",
+  "engines": {
+    "yarn": "1.22.10"
+  },
+  "author": "HC",
   "license": "ISC",
   "devDependencies": {
     "@types/cors": "^2.8.12",
