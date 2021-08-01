@@ -1,4 +1,4 @@
-import { IRecord } from "db/models/record";
+import { IRecord } from "../db/models/record";
 
 class UtilsService {
 
@@ -15,7 +15,7 @@ class UtilsService {
 			const filteredDocs = [];
 			for (var i = 0; i < docs.length; i += 1) {
 				const countArr = docs[i].counts;
-				const sumCount = countArr.reduce((a, b) => a + b, 0);
+				const sumCount = countArr.reduce((a: any, b: any) => a + b, 0);
 				if (sumCount >= minCount && sumCount <= maxCount) {
 					filteredDocs.push({
 						key: docs[i].key,
@@ -24,7 +24,7 @@ class UtilsService {
 					});
 				}
 			}
-			return filteredDocs;
+			return filteredDocs as IRecord[];
 		}
 	};
 }

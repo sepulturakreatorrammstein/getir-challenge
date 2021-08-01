@@ -22,7 +22,7 @@ class RecordRepository {
 
     async getRecords(options: RequestRecordFilter): Promise<IRecord[]> {
         return new Promise(async (resolve, reject) => {
-            let countFilteredDocs;
+            let countFilteredDocs: any;
             try {
                 let docs;
                 docs = await this.record.find({

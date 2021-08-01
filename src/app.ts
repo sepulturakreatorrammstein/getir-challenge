@@ -19,6 +19,7 @@ class App {
     constructor() {
         this.app = express();
         this.port = config.PORT;
+        this.server = new http.Server;
         this.appRouter = express.Router();
     }
 
