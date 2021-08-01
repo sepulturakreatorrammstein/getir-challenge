@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 
 const result = dotenv.config();
-if (result.error) {
+if (result.error && process.env.NODE_ENV != undefined) {
   throw result.error
 }
 
