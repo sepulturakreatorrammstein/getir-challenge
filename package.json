@@ -4,8 +4,6 @@
   "description": "",
   "main": "boot.ts",
   "scripts": {
-    "heroku-prebuild": "yarn build",
-    "postinstall": "tsc --sourceMap false",
     "build": "tsc --project ./tsconfig.json",
     "start": "node dist/boot.js",
     "start:dev": "tsc --project ./tsconfig.json && nodemon src/boot.ts",
